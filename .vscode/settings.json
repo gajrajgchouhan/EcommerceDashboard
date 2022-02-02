@@ -1,0 +1,10 @@
+{
+    "prettier.configPath": ".prettierrc",
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    "editor.tabCompletion": "on",
+    "reactSnippets.settings.tabWidth": 4,
+    "reactSnippets.settings.prettierEnabled": true,
+    "prettier.tabWidth": 4
+}
