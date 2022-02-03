@@ -3,8 +3,80 @@ import {
     PiggyBankIcon,
     ChevronDown,
 } from "../../assets/svgs/index";
+import Chart from "react-apexcharts";
 
 const Left = () => {
+    const optionsMixedChart = {
+        chart: {
+            toolbar: {
+                show: false,
+            },
+            background: "white",
+            curve: "smooth",
+        },
+        stroke: {
+            width: 4,
+            colors: "#FFE5EE",
+            strokeColors: "#5840BB",
+        },
+        markers: {
+            size: 8,
+            color: "#5840BB",
+        },
+        xaxis: {
+            categories: ["", "Week 1", "Week 2", "Week 3", "Week 4"],
+            labels: {
+                style: {
+                    fontSize: "14px",
+                    fontWeight: "500",
+                    colors: "#A0AAC8",
+                },
+            },
+        },
+        grid: {
+            // row: { colors: "#F3F6FF" },
+            // column: { colors: "#F3F6FF" },
+            xaxis: {
+                lines: {
+                    show: true,
+                },
+            },
+            yaxis: {
+                lines: {
+                    show: true,
+                },
+            },
+        },
+        markers: {
+            size: 6,
+            strokeWidth: 3,
+            fillOpacity: 0,
+            strokeOpacity: 0,
+            hover: {
+                size: 8,
+            },
+        },
+        yaxis: {
+            tickAmount: 6,
+            min: 0,
+            max: 100,
+            labels: {
+                style: {
+                    fontSize: "14px",
+                    fontWeight: "500",
+                    colors: "#A0AAC8",
+                },
+            },
+        },
+    };
+    const seriesMixedChart = [
+        {
+            name: "series-1",
+            type: "line",
+            data: [30, 40, 25, 50, 49],
+        },
+    ];
+
     return (
         <div className="flex flex-col w-[53rem] text-[#42427D] border-dashed border-black border-4 m-4">
             <div className="text-5xl flex mb-14">
@@ -60,7 +132,15 @@ const Left = () => {
                         <span>Monthly</span> <ChevronDown />
                     </div>
                 </div>
-                <div className="h-[29rem] w-100 mt-10 "></div>
+                <div className="h-[29rem] w-100">
+                    <Chart
+                        options={optionsMixedChart}
+                        series={seriesMixedChart}
+                        type="line"
+                        width="100%"
+                        height="100%"
+                    />
+                </div>
             </div>
         </div>
     );
