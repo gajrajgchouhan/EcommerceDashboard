@@ -19,10 +19,6 @@ const Left = () => {
             colors: "#FFE5EE",
             strokeColors: "#5840BB",
         },
-        markers: {
-            size: 8,
-            color: "#5840BB",
-        },
         xaxis: {
             categories: ["", "Week 1", "Week 2", "Week 3", "Week 4"],
             labels: {
@@ -78,8 +74,8 @@ const Left = () => {
     ];
 
     return (
-        <div className="flex flex-col w-[53rem] text-[#42427D] border-dashed border-black border-4 m-4">
-            <div className="text-5xl flex mb-14">
+        <div className="flex flex-col w-[53rem] text-[#42427D]">
+            <div className="text-5xl flex mb-12">
                 <div className="mr-1">Welcome, </div>
                 <div className="ml-1 font-bold">Damian</div>
             </div>

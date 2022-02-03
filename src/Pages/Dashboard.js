@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Left from "../components/dashboard/left";
 
 const Dashboard = () => {
-    return <div class="bg-[#5840BB] h-screen  min-h-full"><b>hello from Dashboard</b></div>;
+    return (
+        <div>
+            <Left />
+        </div>
+    );
 };
 
 export default Dashboard;
