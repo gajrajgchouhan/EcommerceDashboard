@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-const LogoIcon = <svg
+const LogoIcon =
+ <svg
   width="20"
   height="20"
   viewBox="0 0 20 20"
@@ -15,10 +16,10 @@ const LogoIcon = <svg
 </svg>;
 const Sidebar = () => {
     return (
-        <div class=" bg-[#5840BB] h-screen  min-h-full w-80">
-            <div class="flex mb-20 ml-20 mt-9">
+        <div class=" bg-[#5840BB] h-screen  min-h-full w-80  rounded-tl-[20px]}">
+            <div class="flex mb-20 ml-20 pt-9">
                 {LogoIcon}
-                <div class="ml-5">Forshop</div>
+                <div class="ml-5 text-white font-bold">ForShop</div>
             </div>
 
             <div class="ml-20  ">
@@ -44,24 +45,47 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div class="flex mb-10">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
-                        />
-                    </svg>
+                <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.4939 0.443115V1.34371C11.4939 2.4499 12.3938 3.34986 13.5 3.34986C14.6062 3.34986 15.5061 2.4499 15.5061 1.34371V0.443115H19.5504L27 8.15645L22.0603 13.0962L20.0687 11.0125V20.5568H6.93128V11.0124L4.93971 13.0962L0 8.15639L7.44964 0.443115H11.4939ZM4.91059 10.5198L8.73248 6.52088V18.7555H18.2675V6.52088L22.0894 10.5198L24.4747 8.13447L18.7859 2.24431H17.1997C16.7941 3.91039 15.2892 5.15106 13.5 5.15106C11.7108 5.15106 10.2059 3.91042 9.80026 2.24431H8.21412L2.52531 8.13447L4.91059 10.5198Z" fill="white"/>
+</svg>
+
+                        
                     <div>
                         <button class="text-white  ml-8">Product</button>
                     </div>
                 </div>
+
+                <div class="flex mb-10">
+                <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.3317 5.62161L15.7101 0H0.668945V24H21.3317V5.62161ZM16.2131 2.93176L18.4 5.1186H16.2131V2.93176ZM19.6143 22.2826H2.38633V1.71739H14.4958V6.83598H19.6143V22.2826Z" fill="white"/>
+</svg>
+<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.35117 2.36942L1.67628 1.69451L0.461914 2.90888L2.35117 4.79815L5.47209 1.67726L4.25772 0.462891L2.35117 2.36942Z" fill="white"/>
+</svg>
+
+
+                      
+                    <div class="ml-167">
+                        <button class="text-white ml-8">Order</button>
+                    </div>
+                </div>
+
+
+
+                <div class="flex mb-10">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4556 16.8005L22.0586 19.6126V14.4389C22.3657 14.1832 22.6457 13.8729 22.8948 13.5116C23.6075 12.4775 24 11.1171 24 9.68114C24 8.24515 23.6075 6.88479 22.8948 5.8507C22.6457 5.48937 22.3657 5.17914 22.0586 4.92342V0.412354L5.58877 4.93195H0V14.911H4.91302C4.98807 16.4397 5.38832 20.5681 7.51757 22.905L8.13948 23.5876L11.0459 20.0664L10.8447 19.6135C10.8414 19.6059 10.6906 19.2601 10.5232 18.6353C10.6087 18.5953 10.6965 18.5509 10.7858 18.5014C11.3152 18.2083 11.982 17.6889 12.4556 16.8005ZM6.49759 6.34363L20.4567 2.51298V4.15408V5.80937V13.5528V15.2081V17.4744L8.4702 13.9644V15.0335C8.4702 17.3239 8.93361 19.0083 9.19972 19.7867L8.13562 21.0759C6.52351 18.5198 6.49767 14.3732 6.49762 14.3277V6.34363H6.49759ZM22.3982 9.68111C22.3982 10.3924 22.2737 11.0672 22.0586 11.6521V7.71011C22.2737 8.29502 22.3982 8.96981 22.3982 9.68111ZM1.60185 6.5338H4.89577V13.3092H1.60185V6.5338ZM10.1986 16.9847C10.1626 16.7125 10.1323 16.4218 10.1103 16.1138L10.8636 16.3343C10.6605 16.6211 10.4262 16.8313 10.1986 16.9847Z" fill="white"/>
+</svg>
+
+                   
+                    <div class="ml-167">
+                        <button class="text-white ml-8">Marketing</button>
+                    </div>
+                </div>
+
+
+
+
 
                 <div class="flex mb-10">
                     <svg
@@ -79,9 +103,34 @@ const Sidebar = () => {
                         />
                     </svg>
                     <div class="ml-167">
-                        <button class="text-white ml-8">Order</button>
+                        <button class="text-white ml-8">Rates</button>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <div class="flex mb-10">
                     <svg
@@ -99,7 +148,7 @@ const Sidebar = () => {
                         />
                     </svg>
                     <div>
-                        <button class="text-white ml-8">Marketing</button>
+                        <button class="text-white ml-8">Reports</button>
                     </div>
                 </div>
             </div>
