@@ -1,4 +1,8 @@
-import { NoteBookIcon, PiggyBankIcon, ChevronDown } from "./svg";
+import {
+    NoteBookIcon,
+    PiggyBankIcon,
+    ChevronDown,
+} from "../../assets/svgs/index";
 
 const Left = () => {
     return (

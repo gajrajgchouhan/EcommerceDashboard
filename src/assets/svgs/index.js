@@ -30,6 +30,7 @@ export const NoteBookIcon = () => {
         </svg>
     );
 };
+
 export const PiggyBankIcon = () => (
     <svg
         width="27"
