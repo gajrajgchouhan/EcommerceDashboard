@@ -1,11 +1,20 @@
 import React from "react";
-import Left from "./components/dashboard/left";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from "./component/Sidebar";
+import Dashboard from "./Pages/Dashboard";
+import Order from "./Pages/Order";
+import Product from "./Pages/Product";
 
 function App() {
     return (
-        <div className="App h-screen w-screen">
-            <Left />
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Sidebar />}></Route>
+                <Route path="/dashboard" element={<Dashboard />}></Route>
+                <Route path="/order" element={<Order />}></Route>
+                <Route path="/product" element={<Product />}></Route>
+            </Routes>
+        </Router>
     );
 }
 
